@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-css-bootstrap-dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./assets/img/duck.png" alt="Bootstrap" width="80"></a>
+                <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto text-body-white mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anagrafica Utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <main class="px-3">
+            <form class="fs-4 container">
+                <h1 class="py-4">Nuovo libro</h1>
+
+                <div class="mb-3 row justify-content-between">
+                    <div class="col-6">
+                        <label for="nomeAutore" class="form-label">Nome Autore</label>
+                        <input class="form-control border border-2" type="text" placeholder="Inserisci il nome" aria-label="nomeAutore">
+                    </div>
+                    <div class="col-6">
+                        <label for="cognomeAutore" class="form-label">Cognome Autore</label>
+                        <input class="form-control border border-2" type="text" placeholder="Inserisci il congome" aria-label="cognomeAutore">
+                    </div>
+                </div>
+
+                <div class="mb-3 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Titolo</label>
+                    <input type="text" class="form-control border border-2" id="titleInput" placeholder="Inserisci il titolo del libro" aria-describedby="emailHelp">
+                    <div id="titleVersion" class="form-text fs-6">Titolo versione italiana</div>
+                </div>
+
+                <div class="row">
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="genereSelect" class="form-label">Genere</label>
+                        <select class=" mb-3 form-select border border-2" aria-label="Default select example">
+                            <option selected>Scegli il genere</option>
+                            <option value="1">Fantasy</option>
+                            <option value="2">Romanzo</option>
+                            <option value="3">BOHHH</option>
+                        </select>
+                    </div>
+    
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="exampleInputEmail1" class="form-label ">Anno di Pubblicazione</label>
+                        <input type="number" placeholder="Inserisci l'anno" class="form-control border border-2" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+    
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="exampleInputEmail1" class="form-label">ISBN#</label>
+                        <input type="text" class="form-control border border-2" placeholder="Inscirsci il codice ISBN#" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    
+                </div>
+
+                <div class="py-3 py-lg-2">
+                    <hr>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="inputNote" class="form-label">Note</label>
+                    <textarea style="height: 100px" class="form-control border border-2" placeholder="Inserisci eventuali note sul libro" aria-label="With textarea" ></textarea>
+                </div>
+
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Disponibile anche in digitale</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+
+            </form>
+
+        </main>
+    </header>
+
+
+
+
+
+
+
+</body>
+
+</html>
